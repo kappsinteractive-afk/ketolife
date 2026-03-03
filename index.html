@@ -773,17 +773,199 @@
 <footer>
   <div class="footer-logo">КетоЖивот</div>
   <div class="footer-links">
-    <a href="#">Начало</a>
-    <a href="#features">Функции</a>
-    <a href="#pricing">Цени</a>
-    <a href="#">Поверителност</a>
-    <a href="#">Условия за ползване</a>
-    <a href="#">Контакт</a>
+    <a href="#" onclick="showPage('home')">Начало</a>
+    <a href="#features" onclick="showPage('home')">Функции</a>
+    <a href="#pricing" onclick="showPage('home')">Цени</a>
+    <a href="#" onclick="showPage('privacy')">Поверителност</a>
+    <a href="#" onclick="showPage('terms')">Условия за ползване</a>
+    <a href="mailto:legal@ketolife.app">Контакт</a>
   </div>
   <div class="footer-copy">© 2026 КетоЖивот. Всички права запазени. Направено с ❤️ в България.</div>
 </footer>
 
+<!-- ══════════════════════════════════════════════
+     PRIVACY POLICY PAGE
+═══════════════════════════════════════════════ -->
+<div id="page-privacy" style="display:none">
+  <div style="max-width:760px;margin:0 auto;padding:100px 24px 60px">
+    <a href="#" onclick="showPage('home')" style="color:#e94560;text-decoration:none;font-size:14px;font-weight:600;">← Назад към начало</a>
+    <h1 style="font-size:36px;font-weight:900;margin:24px 0 8px">🔒 Политика за Поверителност</h1>
+    <p style="color:#888;font-size:13px;margin-bottom:32px">Последно актуализирана: Март 2026 · GDPR съвместима</p>
+
+    <div style="background:rgba(46,213,115,0.1);border:1px solid rgba(46,213,115,0.3);border-radius:16px;padding:20px;margin-bottom:24px">
+      <strong style="color:#2ed573">🛡️ Ключово: Вашата поверителност е нашият приоритет</strong>
+      <p style="color:#a8d8b0;font-size:14px;margin-top:8px;line-height:1.7">Всички лични и здравни данни се пазят <strong>ЛОКАЛНО на вашия телефон</strong>. Ние нямаме достъп до вашата здравна информация. Данните се изтриват при деинсталиране на приложението.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>👤 1. Данни, които събираме</h2>
+      <ul>
+        <li><strong>Данни за профила:</strong> Вашето име, възраст, пол, тегло, височина (въведени доброволно от вас)</li>
+        <li><strong>Здравни данни:</strong> Хранителни дневници, тегло, прием на вода, настроение, кето дни</li>
+        <li><strong>Данни за хранене:</strong> Рецепти, AI генерирани рецепти, любими</li>
+        <li><strong>Данни за покупки:</strong> Обработени от Apple App Store / Google Play (ние не съхраняваме данни за платежни карти)</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2>🗄️ 2. Съхранение на данните</h2>
+      <p>Всички лични здравни данни се съхраняват <strong>ЛОКАЛНО</strong> на вашето устройство чрез AsyncStorage. Ние <strong>НЕ</strong> изпращаме здравни или лични данни на наши сървъри. Данните съществуват само на телефона ви.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>🎯 3. Как използваме данните</h2>
+      <ul>
+        <li>Персонализирано кето проследяване и препоръки</li>
+        <li>Изчисляване на макронутриенти и дневни цели</li>
+        <li>AI генериране на рецепти на базата на вашите продукти</li>
+        <li>Изпращане на напомняния и мотивационни съобщения</li>
+        <li>Подобряване на потребителското изживяване</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2>🤝 4. Споделяне на данни</h2>
+      <p>Ние <strong>НЕ продаваме</strong> вашите лични данни. Споделяме данни САМО с:</p>
+      <ul>
+        <li>Apple App Store – за обработка на покупки</li>
+        <li>Google Play – за обработка на покупки</li>
+      </ul>
+      <p>Никакви здравни или лични данни не се споделят с трети страни.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>⚖️ 5. Вашите права (GDPR)</h2>
+      <ul>
+        <li>✅ Право на достъп до вашите данни</li>
+        <li>✅ Право на коригиране на неточни данни</li>
+        <li>✅ Право на изтриване (изтрийте приложението)</li>
+        <li>✅ Право на ограничаване на обработката</li>
+        <li>✅ Право на преносимост на данните</li>
+        <li>✅ Право на възражение срещу обработката</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2>🔔 6. Известия и напомняния</h2>
+      <p>Приложението може да изпраща push известия за напомняния за хранене, вода и мотивация. Можете да деактивирате известията по всяко време от Настройките на устройството.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>👶 7. Деца</h2>
+      <p>КетоЖивот не е предназначен за деца под 13 години. Ако установим данни на дете, ще ги изтрием незабавно.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>🔐 8. Сигурност</h2>
+      <ul>
+        <li>Локално съхранение на устройството (не в облак)</li>
+        <li>Стандартни мерки за сигурност на iOS/Android</li>
+        <li>Никакво предаване на чувствителни данни по мрежата</li>
+      </ul>
+    </div>
+
+    <div style="background:rgba(233,69,96,0.1);border:1px solid rgba(233,69,96,0.3);border-radius:16px;padding:24px;text-align:center;margin-top:32px">
+      <p style="font-size:16px;font-weight:700;margin-bottom:8px">📬 Въпроси за поверителност?</p>
+      <a href="mailto:privacy@ketolife.app" style="color:#e94560;font-size:16px;font-weight:700">📧 privacy@ketolife.app</a>
+      <p style="color:#888;font-size:12px;margin-top:8px">Отговаряме в рамките на 72 часа</p>
+      <p style="color:#555;font-size:11px;margin-top:16px">© 2026 КетоЖивот. Всички права запазени.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     TERMS OF USE PAGE
+═══════════════════════════════════════════════ -->
+<div id="page-terms" style="display:none">
+  <div style="max-width:760px;margin:0 auto;padding:100px 24px 60px">
+    <a href="#" onclick="showPage('home')" style="color:#e94560;text-decoration:none;font-size:14px;font-weight:600;">← Назад към начало</a>
+    <h1 style="font-size:36px;font-weight:900;margin:24px 0 8px">📋 Условия за Ползване</h1>
+    <p style="color:#888;font-size:13px;margin-bottom:8px">Apple Licensed Application End User License Agreement (Standard EULA)</p>
+    <p style="color:#888;font-size:13px;margin-bottom:32px">Последно актуализирано: Март 2026</p>
+
+    <div style="background:rgba(74,144,226,0.1);border:1px solid rgba(74,144,226,0.3);border-radius:16px;padding:20px;margin-bottom:24px">
+      <p style="color:#a8c8f0;font-size:14px;line-height:1.7">📌 КетоЖивот използва стандартното Лицензионно споразумение на Apple (Standard EULA). Използвайки приложението, вие приемате тези условия. <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" style="color:#e94560">Виж пълния текст →</a></p>
+    </div>
+
+    <div style="background:rgba(255,165,0,0.1);border:1px solid rgba(255,165,0,0.3);border-radius:16px;padding:20px;margin-bottom:24px">
+      <strong style="color:#FFA500">⚠️ Медицинско предупреждение</strong>
+      <p style="color:#ddb870;font-size:14px;margin-top:8px;line-height:1.7">КетоЖивот е информационно приложение и <strong>НЕ замества медицинска консултация</strong>. Преди да започнете кетогенна диета, консултирайте се с лекар, особено ако имате диабет, бъбречни заболявания, бременност или сърдечно-съдови проблеми.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>💳 Абонаментни условия</h2>
+      <ul>
+        <li><strong>Месечен план:</strong> 4.99€/месец (0.17€/ден)</li>
+        <li><strong>Годишен план:</strong> 29.99€/година (0.08€/ден) – спести 50%</li>
+        <li><strong>Lifetime план:</strong> 99.99€ – еднократно плащане</li>
+      </ul>
+      <p>Абонаментите се подновяват автоматично. Може да отмените по всяко време от настройките на App Store / Google Play. Не се правят възстановявания за частично използван период.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>A. Обхват на лиценза</h2>
+      <p>Лицензодателят ви предоставя непрехвърлим лиценз за използване на КетоЖивот на всяко устройство с марката Apple, което притежавате или контролирате. Не можете да разпространявате, прехвърляте или сублицензирате приложението.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>B. Съгласие за използване на данни</h2>
+      <p>Съгласявате се, че Лицензодателят може да събира технически данни за вашето устройство за целите на актуализации на софтуера и поддръжка на продукта.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>C. Прекратяване</h2>
+      <p>Правата ви по настоящото Споразумение се прекратяват автоматично, ако не спазвате условията му.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>E. Без гаранция ⚠️</h2>
+      <p>ПРИЛОЖЕНИЕТО СЕ ПРЕДОСТАВЯ „ТАКОВА, КАКВОТО Е" БЕЗ КАКВАТО И ДА Е ГАРАНЦИЯ. ЛИЦЕНЗОДАТЕЛЯТ НЕ НОСИ ОТГОВОРНОСТ ЗА ЗДРАВОСЛОВНИ РЕЗУЛТАТИ ОТ ДИЕТАТА.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>F. Ограничение на отговорността</h2>
+      <p>Общата отговорност на Лицензодателя към вас не може да надвишава петдесет долара (50 USD). Ако сте гражданин на ЕС, приложимото право е законодателството на вашата страна на пребиваване.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>H. Приложимо право</h2>
+      <p>Ако сте гражданин на държава от Европейския съюз, Швейцария, Норвегия или Исландия, приложимото право и съд са тези на вашето обичайно местопребиваване.</p>
+    </div>
+
+    <div style="background:rgba(233,69,96,0.1);border:1px solid rgba(233,69,96,0.3);border-radius:16px;padding:20px;text-align:center;margin-top:32px">
+      <p style="margin-bottom:12px">Пълен текст на Apple Standard EULA:</p>
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" style="color:#e94560;font-weight:700;word-break:break-all">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>
+      <p style="color:#888;font-size:12px;margin-top:16px">📧 legal@ketolife.app</p>
+      <p style="color:#555;font-size:11px;margin-top:8px">© 2026 КетоЖивот. Всички права запазени.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  #page-privacy, #page-terms { background: var(--bg); min-height: 100vh; padding-top: 0; }
+  .policy-section { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07); border-radius: 14px; padding: 20px; margin-bottom: 12px; }
+  .policy-section h2 { color: #fff; font-size: 17px; font-weight: 800; margin-bottom: 12px; }
+  .policy-section p { color: #bbb; font-size: 14px; line-height: 1.8; margin-bottom: 8px; }
+  .policy-section ul { color: #bbb; font-size: 14px; line-height: 1.8; padding-left: 20px; }
+  .policy-section ul li { margin-bottom: 6px; }
+</style>
+
 <script>
+  // Page switcher
+  function showPage(page) {
+    document.getElementById('page-privacy').style.display = 'none';
+    document.getElementById('page-terms').style.display = 'none';
+
+    if (page === 'privacy') {
+      document.getElementById('page-privacy').style.display = 'block';
+      window.scrollTo(0, 0);
+    } else if (page === 'terms') {
+      document.getElementById('page-terms').style.display = 'block';
+      window.scrollTo(0, 0);
+    }
+    // 'home' shows main content (already visible by default)
+  }
+
   // FAQ toggle
   function toggleFaq(el) {
     const item = el.parentElement;
@@ -803,6 +985,10 @@
       if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
     });
   });
+
+  // Check URL hash for direct links
+  if (window.location.hash === '#privacy') showPage('privacy');
+  if (window.location.hash === '#terms') showPage('terms');
 </script>
 </body>
 </html>
